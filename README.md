@@ -2,6 +2,9 @@
 
 A production-style real-time AI-powered attendance management and analytics dashboard built using **Python**, **DeepFace**, **OpenCV**, **Streamlit**, **SQLite**, **Pandas**, **Plotly**, and **FPDF2**.
 
+Demo Link:
+https://ai-attendence-system-o2jentmykdusdjayqkwctg.streamlit.app/
+
 ---
 
 ## 🌟 Key Features
