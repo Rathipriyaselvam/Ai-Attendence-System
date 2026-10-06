@@ -1,0 +1,155 @@
+/* Main Layout Styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #0E1117;
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hide default streamlit header decoration */
+header[data-testid="stHeader"] {
+    background: transparent;
+}
+
+/* Custom Header Banner */
+.main-header {
+    background: linear-gradient(135deg, #1E2640 0%, #0F172A 100%);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.main-header h1 {
+    color: #F8FAFC;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.5px;
+}
+
+.main-header p {
+    color: #94A3B8;
+    font-size: 0.95rem;
+    margin: 6px 0 0 0;
+}
+
+/* KPI Card Grid */
+.kpi-card {
+    background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.8));
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+.kpi-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #94A3B8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.kpi-value {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #F8FAFC;
+    margin-bottom: 4px;
+}
+
+.kpi-subtext {
+    font-size: 0.8rem;
+    color: #64748B;
+}
+
+/* Badges */
+.badge-present {
+    background-color: rgba(16, 185, 129, 0.15);
+    color: #10B981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-absent {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #EF4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge-warning {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #F59E0B;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Custom Recognition Box Card */
+.recognition-card {
+    background: #1E293B;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px;
+    text-align: center;
+}
+
+.rec-success {
+    border-left: 4px solid #10B981;
+}
+
+.rec-unknown {
+    border-left: 4px solid #EF4444;
+}
+
+.rec-idle {
+    border-left: 4px solid #64748B;
+}
+
+/* Status indicator dot */
+.dot-online {
+    height: 10px;
+    width: 10px;
+    background-color: #10B981;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 8px #10B981;
+    margin-right: 6px;
+}
+
+.dot-offline {
+    height: 10px;
+    width: 10px;
+    background-color: #EF4444;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
